@@ -1,7 +1,8 @@
 general:
   branches:
-    ignore:
-      - gh-pages
+    only:
+      - master
+      - develop
 
 machine:
   timezone: Asia/Tokyo
