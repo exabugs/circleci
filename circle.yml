@@ -1,8 +1,8 @@
 machine:
-    timezone: Asia/Tokyo
+  timezone: Asia/Tokyo
     
-    hosts:   #/etc/hostsを書き換える
-        dev.hogehoge.com: 127.0.0.1
+  hosts:   #/etc/hostsを書き換える
+    dev.hogehoge.com: 127.0.0.1
 
 test:
   pre:
