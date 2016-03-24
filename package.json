@@ -10,7 +10,7 @@
   "scripts": {
     "echo": "echo $npm_package_config_foo",
     "build": "echo $ npm run build && exit 0",
-    "test": "scripts/run-tests.sh"
+    "test": "bash scripts/run-tests.sh"
   },
 
   "repository": {

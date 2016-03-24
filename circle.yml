@@ -1,5 +1,8 @@
 machine:
   timezone: Asia/Tokyo
+
+  node:
+    version: 0.12.0
     
   hosts:   #/etc/hostsを書き換える
     dev.hogehoge.com: 127.0.0.1
