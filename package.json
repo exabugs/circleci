@@ -1,34 +1,29 @@
 {
   "name": "circleci",
-
   "version": "1.0.0",
-
   "description": "",
-
   "main": "index.js",
-
   "scripts": {
     "echo": "echo $npm_package_config_foo",
     "build": "echo $ npm run build && exit 0",
-    "test": "bash scripts/run-tests.sh"
+    "test": "bash scripts/run-tests.sh",
+    "deploy_prod": "bash scripts/deploy_prod.sh",
+    "deploy_staging": "bash scripts/deploy_staging.sh"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/exabugs/circleci.git"
   },
-
   "config": {
     "foo": "bar"
   },
-
   "author": "exabugs@gmail.com",
-
   "license": "ISC",
-
   "bugs": {
     "url": "https://github.com/exabugs/circleci/issues"
   },
-
-  "homepage": "https://github.com/exabugs/circleci"
+  "homepage": "https://github.com/exabugs/circleci",
+  "devDependencies": {
+    "serverless": "^0.5.1"
+  }
 }

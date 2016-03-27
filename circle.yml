@@ -8,8 +8,8 @@ machine:
   timezone: Asia/Tokyo
 
   node:
-    version: 0.12.0
-    
+    version: 4.4.1
+
   hosts:   #/etc/hostsを書き換える
     dev.hogehoge.com: 127.0.0.1
 
@@ -18,4 +18,14 @@ test:
     - npm run build
   override:
     - npm test
+
+deployment:
+  production:
+    branch: production
+    commands:
+      - ./deploy_prod.sh
+  staging:
+    branch: master
+    commands:
+      - ./deploy_staging.sh
 
