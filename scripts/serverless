@@ -13,9 +13,11 @@ AWSDIR=~/.aws
 mkdir -p ${AWSDIR}
 CREDENTIALS=${AWSDIR}/credentials
 
-echo "[${PROFILE}]" > ${CREDENTIALS}
-echo "aws_access_key_id=${AWS_ACCESS_KEY_ID}" >> ${CREDENTIALS}
-echo "aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" >> ${CREDENTIALS}
+cat << EOS > ${CREDENTIALS}
+[${PROFILE}]
+aws_access_key_id=${AWS_ACCESS_KEY_ID}
+aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}
+EOS
 
 slss project init -p ${PROFILE} -s ${STAGE} -r ${REGION}
 
