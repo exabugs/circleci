@@ -4,4 +4,5 @@
 
 
 slss project remove
-slss project init -s dev
+slss project init -s dev -r ap-northeast-1
+
