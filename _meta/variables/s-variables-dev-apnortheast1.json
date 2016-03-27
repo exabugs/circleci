@@ -1,0 +1,5 @@
+{
+  "region": "ap-northeast-1",
+  "resourcesStackName": "circleci-dev-r",
+  "iamRoleArnLambda": "arn:aws:iam::901762418858:role/circleci-dev-r-IamRoleLambda-1X8T3CISEL41K"
+}
