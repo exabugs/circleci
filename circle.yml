@@ -17,9 +17,9 @@ deployment:
   production:
     branch: production
     commands:
-      - ./deploy_prod.sh
+      - npm run deploy_prod
   staging:
     branch: master
     commands:
-      - ./deploy_staging.sh
+      - npm run deploy_staging
 

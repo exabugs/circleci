@@ -1,1 +1,1 @@
-scripts/deploy_staging.sh
+echo scripts/deploy_staging.sh
