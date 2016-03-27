@@ -1,6 +1,17 @@
 
-echo "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" > admin.env
-echo "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" >> admin.env
+# echo "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" > admin.env
+# echo "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" >> admin.env
+
+REGION=ap-northeast-1
+PROJECT=circleci
+STAGE=dev
+
+slss project remove
+
+aws --region ${REGION} cloudformation describe-stacks --stack-name ${PROJECT}-${STAGE}-r
+sleep 10
+
+
 
 AWSDIR=~/.aws
 mkdir -p ${AWSDIR}
@@ -12,15 +23,6 @@ echo "aws_access_key_id=${AWS_ACCESS_KEY_ID}" >> ${CREDENTIALS}
 echo "aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" >> ${CREDENTIALS}
 
 cat ${CREDENTIALS}
-
-REGION=ap-northeast-1
-PROJECT=circleci
-STAGE=dev
-
-slss project remove
-
-aws --region ${REGION} cloudformation describe-stacks --stack-name ${PROJECT}-${STAGE}-r
-sleep 10
 
 slss project init -p ${PROFILE} -s ${STAGE} -r ${REGION}
 
