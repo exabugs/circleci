@@ -3,7 +3,7 @@ echo "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" > admin.env
 echo "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" >> admin.env
 
 AWSDIR=~/.aws
-mkdir -p {AWSDIR}
+mkdir -p ${AWSDIR}
 PROFILE=serverless-starter_dev
 CREDENTIALS=${AWSDIR}/credentials
 
