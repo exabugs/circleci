@@ -12,7 +12,8 @@ STAGE=dev
 
 OPTION="-s $STAGE -r $AWS_REGION"
 
-sls project init -p $AWS_PROFILE $OPTION -c true
+#sls project init -p $AWS_PROFILE $OPTION -c true
+sls project init -p $AWS_PROFILE $OPTION
 
 sls resources deploy $OPTION
 
