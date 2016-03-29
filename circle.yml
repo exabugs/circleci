@@ -9,10 +9,8 @@ machine:
     AWS_PROFILE: serverless-circleci_dev
 
   post:
-    - pwd
-    - ls -l
     - bash ${CIRCLE_PROJECT_REPONAME}/scripts/circleci_env
-    - bash ${CIRCLE_PROJECT_REPONAME}/./scripts/aws_init
+    - bash ${CIRCLE_PROJECT_REPONAME}/scripts/aws_init
 
 test:
   override:
