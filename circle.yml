@@ -4,12 +4,20 @@ machine:
   node:
     version: 4.4.1
 
+  environment:
+    AWS_REGION: ap-northeast-1
+    AWS_PROFILE: serverless-circleci_dev
+
   hosts:   #/etc/hostsを書き換える
     dev.hogehoge.com: 127.0.0.1
 
+checkout:
+  post:
+    - npm run aws_init
+    - bash scripts/circleci_env
+    - bash scripts/aws_init
+
 test:
-  pre:
-    - npm run build
   override:
     - npm test
 
