@@ -1,0 +1,14 @@
+AWSDIR=~/.aws
+mkdir -p ${AWSDIR}
+
+cat << EOS > ${AWSDIR}/config
+[default]
+region=${AWS_REGION}
+EOS
+
+cat << EOS > ${AWSDIR}/credentials
+[${AWS_PROFILE}]
+aws_access_key_id=${AWS_ACCESS_KEY_ID}
+aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}
+EOS
+
