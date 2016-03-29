@@ -18,4 +18,4 @@ sls resources deploy $OPTION
 
 sls function deploy $OPTION
 
-sls endpoints deploy $OPTION
+sls endpoint deploy $OPTION
