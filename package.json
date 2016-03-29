@@ -6,7 +6,7 @@
   "scripts": {
     "echo": "echo $npm_package_config_foo",
     "build": "echo $ npm run build && exit 0",
-    "test": "bash scripts/serverless.sh",
+    "test": "bash scripts/run_tests.sh",
     "deploy_prod": "bash scripts/deploy_prod.sh",
     "deploy_staging": "bash scripts/deploy_staging.sh"
   },
