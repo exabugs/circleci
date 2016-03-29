@@ -11,8 +11,8 @@ machine:
   post:
     - pwd
     - ls -l
-    - bash scripts/circleci_env
-    - bash ./scripts/aws_init
+    - bash ${CIRCLE_PROJECT_REPONAME}/scripts/circleci_env
+    - bash ${CIRCLE_PROJECT_REPONAME}/./scripts/aws_init
 
 test:
   override:
