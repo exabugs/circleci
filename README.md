@@ -2,4 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/exabugs/circleci.svg?style=svg)](https://circleci.com/gh/exabugs/circleci)
 
-1
+slss function create functions/function1
+slss dash deploy
+
+slss project remove
