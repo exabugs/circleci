@@ -7,5 +7,5 @@ sleep 10
 
 
 
-slss project init -p ${AWS_PROFILE} -s ${STAGE}
+slss project init -p ${AWS_PROFILE} -s ${STAGE} -r ${AWS_REGION}
 
