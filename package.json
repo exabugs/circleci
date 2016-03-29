@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "aws_init": "bash scripts/aws_init",
     "echo": "echo $npm_package_config_foo",
     "build": "echo $ npm run build && exit 0",
     "test": "bash scripts/run_tests.sh",
