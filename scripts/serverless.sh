@@ -1,5 +1,5 @@
 
-STAGE=dev
+STAGE=${CIRCLE_BRANCH}
 
 slss project remove
 
