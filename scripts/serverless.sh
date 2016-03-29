@@ -12,6 +12,6 @@ STAGE=dev
 sls project init -p ${AWS_PROFILE} -s ${STAGE} -r ${AWS_REGION} -c true
 
 #sls resources deploy -s ${STAGE} -r ${AWS_REGION}
-sls resources deploy -s ${STAGE}
+sls resources deploy -r ${AWS_REGION}
 
 sls function deploy
