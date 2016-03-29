@@ -1,1 +1,1 @@
-echo vi scripts/deploy_prod.sh
+echo scripts/deploy_prod.sh
