@@ -15,6 +15,7 @@ machine:
 test:
   override:
     - npm test
+    - cat ${CIRCLE_PROJECT_REPONAME}/admin.env
 
 deployment:
   production:
