@@ -9,8 +9,8 @@ machine:
     AWS_PROFILE: serverless-circleci_dev
 
   post:
-    - bash scripts/circleci_env
-    - bash scripts/aws_init
+    - bash ./scripts/circleci_env
+    - bash ./scripts/aws_init
 
 test:
   override:
